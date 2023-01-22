@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/" type="image/x-icon" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div id="total">0</div>
+    <form id="exp_form">
+      <label for="exp_input-name">Expense</label><br />
+      <input type="text" name="Expense" id="exp_input-name" /><br />
+
+      <label for="exp_input-amount">Amount</label><br />
+      <input type="number" name="Amount" id="exp_input-amount" /><br />
+
+      <label for="exp_input-date">Date</label><br />
+      <input type="date" name="Date" id="exp_input-date" /><br />
+
+      <label for="exp_input-category">Category</label><br />
+      <input type="tetx" name="Category" id="exp_input-category" /><br />
+
+      <button id="exp_add">
+        <img src="plus.svg" alt="ADD" class="plus" />
+      </button>
+    </form>
+
+    <div id="exp_container">
+      <div id="exp_org">
+        <li class="orgainzer">Expense</li>
+        <li class="orgainzer">Amount</li>
+        <li class="orgainzer">Date</li>
+        <li class="orgainzer">Category</li>
+      </div>
+      <div id="exp_list"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
